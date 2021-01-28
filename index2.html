@@ -18,31 +18,41 @@
 </head>
 
 <body>
-  <div class="container">
+
     <!-- Content here -->
-    <!-- タイトル -->
-    <h1 class="display-4 m-y-1">5つ星ゲーム</h1>
-  </div>
+
   <!-- メニュー -->
 
-  <div class="full">
-    <nav class="nav m-b-1 bg-secondary text-black">
+  <div class="full sticky-top">
+    <nav class="nav m-b-0 bg-secondary text-black">
       <div class="container">
-        <a class="nav-link p-r-1 active" href="#">トップページ</a>
-        <a class="nav-link p-r-1" href="#">Windowsゲーム</a>
-        <a class="nav-link p-r-1" href="#">Androidapp</a>
-        <a class="nav-link p-r-1" href="#">iOSapp</a>
-        <a class="nav-link p-r-1" href="#">開発環境</a>
+        <a class="nav-link p-r-1 active" href="index2.html">トップページ</a>
+        <a class="nav-link p-r-1" href="page/windowsapp.html">Windowsゲーム</a>
+        <a class="nav-link p-r-1" href="page/Androidapp.html">Androidapp</a>
+        <a class="nav-link p-r-1" href="page/iOSapp.html">iOSapp</a>
+        <a class="nav-link p-r-1" href="#environment">開発環境</a>
       </div>
     </nav>
   </div>
 
+    <!-- タイトル -->
+  <div class="jumbotron">
+    <h1 class="display-4 align-center">ゲームはシンプルに<br>
+      <span class="fs-5">ー無駄を削ぎ落とした簡単ゲーム集ー</span></h1>
+    <p class="lead">管理人が作ったゲームが適当に置いてあります。</p>
+    <hr class="my-4">
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="#gamelist" role="button">ゲームを始める</a>
+  </div>
+
   <!-- メインコンテンツ -->
   <!-- ホームページ概要 -->
+<!--   
   <div class="container m-b-2">
     <h3 class="m-b-1 border-bottom border-secondary">ホームページ概要</h3>
     <p>管理人が作ったゲームが適当に置いてあります。</p>
-  </div>
+  </div> -->
+
   <!-- お知らせ -->
   <div class="container m-b-2">
     <h3 class="border-bottom border-secondary">お知らせ</h3>
@@ -67,7 +77,7 @@
   </div>
 
   <!-- 作成したゲーム一覧 -->
-  <div class="container m-b-2">
+  <div id="gamelist" class="container m-b-2">
     <h3 class="m-b-1 border-bottom border-secondary">作成したゲーム一覧</h3> 
 
     <!-- windows game -->
@@ -102,7 +112,7 @@
       </div>
     </div>
 
-    <p class="m-y-2 text-right"><a href="#">もっと見る</a></p>
+    <p class="m-y-2 text-right"><a href="page/windowsapp.html">もっと見る</a></p>
 
     </div>
     <!-- Android game -->
@@ -110,7 +120,7 @@
 
     <div class="card-group m-b-2">
       <div class="card">
-        <img src="../game01.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game01.png" width="100%" height="180" class="p-" alt="image cap">
         
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -119,7 +129,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../game02.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game02.png" width="100%" height="180" class="p-" alt="image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -127,7 +137,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../game03.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game03.png" width="100%" height="180" class="p-" alt="image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -136,12 +146,12 @@
       </div>
     </div>
 
-    <p class="m-y-2 text-right"><a href="#">もっと見る</a></p>
+    <p class="m-y-2 text-right"><a href="page/Androidapp.html">もっと見る</a></p>
 
     <h4>＜iOS ( iPhone, iPad, iPod Touch ) 向けアプリ＞ (<a href="https://itunes.apple.com/jp/artist/id803806609">AppStoreにて公開中</a>)＞</h4>
     <div class="card-group">
       <div class="card">
-        <img src="../game01.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game01.png" width="100%" height="180" class="p-" alt="image cap">
         
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -150,7 +160,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../game02.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game02.png" width="100%" height="180" class="p-" alt="image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -158,7 +168,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../game03.png" width="100%" height="180" class="p-" alt="image cap">
+        <img src="game03.png" width="100%" height="180" class="p-" alt="image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -167,7 +177,7 @@
       </div>
     </div>
 
-    <p class="m-y-2 text-right"><a href="#">もっと見る</a></p>
+    <p class="m-y-2 text-right"><a href="page/iOSapp.html">もっと見る</a></p>
   </div>
 
   <!-- 開発環境もろもろ -->
@@ -195,7 +205,7 @@
         ※F#3.0を使用しているゲームに関しては、ライブラリを同梱しているためランタイムは必要ないはずです。</li>
     </ul>
 
-    <h4>開発環境(プロジェクトファイルを開くのに必要なツール)※すべて無償</h4>
+    <h4 id="environment">開発環境(プロジェクトファイルを開くのに必要なツール)※すべて無償</h4>
     <ul>
       <li>No.1～12のゲーム（HSP）</li>
       <ul>
