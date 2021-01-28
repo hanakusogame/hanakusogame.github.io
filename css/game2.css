@@ -16,3 +16,15 @@
 h3{
   padding-bottom: 8px;
 }
+.jumbotron{
+  text-align: center;
+  
+}
+h1{
+  text-align: center;
+}
+h1 span{
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: .25em;
+}
