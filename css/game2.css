@@ -12,6 +12,10 @@
   color: white;
   padding-left: 0px;
 }
+.nav-link:hover{
+  color: darkgrey;
+  transition: .3s;
+}
 
 h3{
   padding-bottom: 8px;
@@ -27,4 +31,50 @@ h1 span{
   font-size: 32px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: .25em;
+}
+h1 a{
+  text-decoration: none;
+  color: black;
+}
+h1 a:hover{
+  text-decoration: none;
+}
+
+/*  */
+h2 span{
+  font-size: 20px;
+}
+.fw-bold{
+  font-weight: bold;
+}
+.line-through{
+  text-decoration: line-through;
+}
+
+td img{
+  vertical-align: middle;
+}
+.w-25.scr {
+  vertical-align: middle;
+}
+.w-25.scr img{
+  width: 100%;
+  height: auto;
+}
+
+/* スマホサイズ */
+@media screen and (max-width:480px){
+table.table.table-bordered tbody td {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+table.table.table-bordered thead th {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.w-25{
+  width: 100%!important;
+}
 }
