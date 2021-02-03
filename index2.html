@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- Content here -->
+  <!-- Content here -->
 
   <!-- メニュー -->
 
@@ -35,10 +35,32 @@
     </nav>
   </div>
 
-    <!-- タイトル -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="globalMenuSp">
+    <ul>
+      <li>
+      <li><a href="index2.html">トップページ</a>
+      </li>
+      <li><a href="page/windowsapp.html">Windowsゲーム</a>
+      </li>
+      <li><a href="page/Androidapp.html">Androidapp</a>
+      </li>
+      <li><a href="page/iOSapp.html">iOSapp</a>
+      </li>
+      <li><a href="#environment">開発環境</a></li>
+    </ul>
+  </nav>
+
+  <!-- タイトル -->
   <div class="jumbotron">
     <h1 class="display-4 align-center">ゲームはシンプルに<br>
-      <span class="fs-5">ー無駄を削ぎ落とした簡単ゲーム集ー</span></h1>
+      <span class="fs-5">ー無駄を削ぎ落とした簡単ゲーム集ー</span>
+    </h1>
     <p class="lead">管理人が作ったゲームが適当に置いてあります。</p>
     <hr class="my-4">
     <p></p>
@@ -47,14 +69,14 @@
 
   <!-- メインコンテンツ -->
   <!-- ホームページ概要 -->
-<!--   
+  <!--   
   <div class="container m-b-2">
     <h3 class="m-b-1 border-bottom border-secondary">ホームページ概要</h3>
     <p>管理人が作ったゲームが適当に置いてあります。</p>
   </div> -->
 
   <!-- お知らせ -->
-  <div class="container m-b-2">
+  <div class="container mb-4">
     <h3 class="border-bottom border-secondary">お知らせ</h3>
     <table class="table">
 
@@ -69,120 +91,193 @@
           <td> サイト復活。</td>
         </tr>
         <tr>
-          <th scope="row"> 2013/11/05 </th>
-          <td>ブログはじめました。→<a href="http://sdhfuskjfk.blog.fc2.com/">ひきこもりがスマホアプリを作れない。</a></td>
+          <th scope="row">2021/01/01</th>
+          <td>GitHubPagesに移行</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <!-- 作成したゲーム一覧 -->
-  <div id="gamelist" class="container m-b-2">
-    <h3 class="m-b-1 border-bottom border-secondary">作成したゲーム一覧</h3> 
+  <div id="gamelist" class="container mb-4">
+    <h3 class="m-b-1 border-bottom border-secondary">作成したゲーム一覧</h3>
 
     <!-- windows game -->
-    <div class="inner m-b-2">
-    <h4>＜Windows 向けゲーム＞</h4>
+    <div class="inner mb-4 pb-4">
+      <h4>＜Windows 向けゲーム＞</h4>
 
-    <div class="card-group">
-      <div class="card">
-        <img src="game01.png" width="100%" height="180" class="p-" alt="image cap">
-        
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="game02.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="game03.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="game01.png" alt="image cap">
 
-    <p class="m-y-2 text-right"><a href="page/windowsapp.html">もっと見る</a></p>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">インベーダーゲーム</h5>
+            <p class="card-text"> 作品No：01 <a href="http://www.nicovideo.jp/watch/sm7148256">ニコニコ動画リンク</a><br>
+              作成日：2009/05/24<br>
+              作成期間：１日<br>
+              言語：HSP3.1<br>
+              その名の通り、インベーダー風ゲーム<br>
+              <a href="game01.zip">ゲームのダウンロード</a><br>
+              <a href="game01_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">上下キー：移動<br>
+              スペースキー：ショット発射</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="game02.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">りんごひろいゲーム</h5>
+            <p class="card-text">作品No：02 <a href="http://www.nicovideo.jp/watch/sm7157440">ニコニコ動画リンク</a><br>
+              作成日：2009/05/25<br>
+              作成期間：１日<br>
+              言語：HSP3.1<br>
+              落ちてくるりんごを拾いつつ、鉄球をよけるゲーム。<br>
+              <a href="game02.zip">ゲームのダウンロード</a><br>
+              <a href="game02_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">上下キー：移動<br>
+              スペースキー：ジャンプ</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="game03.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">あっちむいてホイ</h5>
+            <p class="card-text">作品No：03 <a href="http://www.nicovideo.jp/watch/sm7176248">ニコニコ動画リンク</a><br>
+              作成日：2009/05/27～05/28<br>
+              作成期間：1.5日<br>
+              言語：HSP3.1<br>
+              あっちむいてホイをするゲーム。<br>
+              <a href="game03.zip">ゲームのダウンロード</a><br>
+              <a href="game03_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">マウス左クリック：動作選択</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="m-y-2 text-right"><a href="page/windowsapp.html">もっと見る</a></p>
 
     </div>
     <!-- Android game -->
-    <h4>＜Android 向けアプリ＞ (<a href="https://play.google.com/store/apps/developer?id=hanakuso">GooglePlayにて公開中</a>)</h4>
+    <div class="inner mb-4 pb-4">
+      <h4>＜Android 向けアプリ＞ (<a href="https://play.google.com/store/apps/developer?id=hanakuso">GooglePlay</a>にて公開中)</h4>
 
-    <div class="card-group m-b-2">
-      <div class="card">
-        <img src="game01.png" width="100%" height="180" class="p-" alt="image cap">
-        
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="card-group">
+        <div class="card">
+          <img src="game37.png" alt="image cap">
+
+          <div class="card-body">
+            <h5 class="card-title fw-bold">インベーダーゲーム</h5>
+            <p class="card-text">作品No：37 <a href="http://www.nicovideo.jp/watch/sm19923075">ニコニコ動画リンク</a><br>
+              作成日：2013/01/26<br>
+              作成期間：20日<br>
+              言語：Java<br>
+              その名の通り、インベーダー風ゲーム<br>
+              <a href="https://play.google.com/store/apps/details?id=jp.test.Test02">ゲームのダウンロード</a><br>
+              <a href="http://ux.getuploader.com/hanakuso/download/1/game37_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">左アナログパッド：移動<br>
+              右のボタン：ショット発射</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="game38.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">マインスイーパー</h5>
+            <p class="card-text">作品No：38 <a href="http://www.nicovideo.jp/watch/sm20070668">ニコニコ動画リンク</a><br>
+              作成日：2013//02/13<br>
+              作成期間：3日<br>
+              言語：Java<br>
+              ただのマインスイーパー。<br>
+              旗は立てられません。<br>
+              <a href="https://play.google.com/store/apps/details?id=jp.test.test04">ゲームのダウンロード</a><br>
+              <a href="http://ux.getuploader.com/hanakuso/download/2/game38_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">タップ：マスを開ける</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="game39.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">はさみ将棋</h5>
+            <p class="card-text"> 作品No：39 <a href="http://www.nicovideo.jp/watch/sm20171570">ニコニコ動画リンク</a><br>
+              作成日：2013//02/24<br>
+              作成期間：3日<br>
+              言語：Java<br>
+              ただのはさみ将棋。<br>
+              CPU対戦機能はありません。<br>
+              <a href="https://play.google.com/store/apps/details?id=test.test.test05">ゲームのダウンロード</a><br>
+              <a href="http://ux.getuploader.com/hanakuso/download/3/game39_s.zip">ソースコードのダウンロード</a>
+            </p>
+            <p class="card-text">タップ：コマ移動</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="game02.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="game03.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+
+      <p class="m-y-2 text-right"><a href="page/Androidapp.html">もっと見る</a></p>
+
     </div>
 
-    <p class="m-y-2 text-right"><a href="page/Androidapp.html">もっと見る</a></p>
+    <!-- iOS -->
+    <div class="inner mb-4 pb-4">
+      <h4>＜iOS app( iPhone, iPad, iPod Touch)＞(<a
+          href="https://itunes.apple.com/jp/artist/id803806609">AppStore</a>にて公開中)＞</h4>
+      <div class="card-group">
+        <div class="card">
+          <img src="game72.png" alt="image cap">
 
-    <h4>＜iOS ( iPhone, iPad, iPod Touch ) 向けアプリ＞ (<a href="https://itunes.apple.com/jp/artist/id803806609">AppStoreにて公開中</a>)＞</h4>
-    <div class="card-group">
-      <div class="card">
-        <img src="game01.png" width="100%" height="180" class="p-" alt="image cap">
-        
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">15パズル</h5>
+            <p class="card-text">作品No：72<br>
+              作成日：2014/01/28<br>
+              作成期間：7日<br>
+              言語：Objective-C<br>
+              iOSアプリ第１弾。<br>
+              定番スライドパズル。<br>
+              <a href="https://itunes.apple.com/jp/app/id803806606">ゲームのダウンロード</a>
+            </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="game73.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">数字タップ</h5>
+            <p class="card-text">作品No：73<br>
+              作成日：2014//02/06<br>
+              作成期間：7日<br>
+              言語：Objective-C<br>
+              スマホでは定番の<br>
+              数字タッチゲーム。<br>
+              <a href="https://itunes.apple.com/jp/app/id810633884">ゲームのダウンロード</a>
+            </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="game74.png" alt="image cap">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ヘリコプター</h5>
+            <p class="card-text">作品No：74<br>
+              作成日：2014//02/08<br>
+              作成期間：3日<br>
+              言語：Objective-C<br>
+              単純操作のフライトゲーム。<br>
+              <a href="https://itunes.apple.com/jp/app/id813484245">ゲームのダウンロード</a>
+            </p>
+
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="game02.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="game03.png" width="100%" height="180" class="p-" alt="image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+
+      <p class="m-y-2 text-right"><a href="page/iOSapp.html">もっと見る</a></p>
     </div>
-
-    <p class="m-y-2 text-right"><a href="page/iOSapp.html">もっと見る</a></p>
   </div>
-
   <!-- 開発環境もろもろ -->
   <div class="container">
-    <h3  id="environment" class="m-b-1 border-bottom border-secondary">開発環境もろもろ</h3>
+    <h3 id="environment" class="m-b-1 border-bottom border-secondary">開発環境もろもろ</h3>
     <h4>ＸＮＡ4.0 を使用したゲームが動作する環境</h4>
     <ul>
       <li>OS は Windows XP SP3 以降、Windows Vista SP1 以降、Windows 7以降</li>
@@ -219,7 +314,8 @@
             Visual Studio 2010 Service Pack 1</a></li>
         <li>F#2.0のコンパイラとツール：<a href="http://www.microsoft.com/en-us/download/details.aspx?id=600">Microsoft F#, August
             2010 Community Technology Preview</a></li>
-        <li>XNA4.0の開発者向けライブラリとツール：<a href="http://www.microsoft.com/en-us/download/details.aspx?id=23714">Microsoft XNA
+        <li>XNA4.0の開発者向けライブラリとツール：<a href="http://www.microsoft.com/en-us/download/details.aspx?id=23714">Microsoft
+            XNA
             Game Studio 4.0</a><br>
           ※No.21以降のゲームでは不要</li>
       </ul>
@@ -264,6 +360,7 @@
       管理人は一切の責任を負いません。各自の責任においてご使用ください。</p>
 
   </div>
+  <footer></footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
