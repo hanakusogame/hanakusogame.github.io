@@ -105,12 +105,28 @@ footer li{
 /* スマホサイズ */
 @media screen and (max-width:480px){
 
+  body{
+    font-size: 14px;
+  }
   .display-4{
     font-size: 24px;
   }
   .display-4 span  {
+    font-size: 18px;
+  }
+  .jumbotron p  {
+    font-size: 14px;
+  }
+  .jumbotron a  {
+    font-size: 16px;
+  }
+  h3  {
     font-size: 20px;
   }
+  h4  {
+    font-size: 18px;
+  }
+
   .full.sticky-top{
     display: none;
   }
@@ -119,6 +135,9 @@ footer li{
   }
   h2 span  {
     font-size: 16px;
+  }
+  .card img {
+    width: 30%;
   }
   .scr img:nth-of-type(-n+3){
     width: 100%;
