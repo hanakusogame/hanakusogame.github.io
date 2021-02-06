@@ -104,8 +104,30 @@ footer li{
 
 /* スマホサイズ */
 @media screen and (max-width:480px){
+
+  .display-4{
+    font-size: 24px;
+  }
+  .display-4 span  {
+    font-size: 20px;
+  }
   .full.sticky-top{
     display: none;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h2 span  {
+    font-size: 16px;
+  }
+  .scr img:nth-of-type(-n+3){
+    width: 100%;
+  }
+  .scr img {
+    width: 50%;
+  }
+  td.col-md-3.col-xs-12.scr {
+  text-align: center;
   }
   
 
