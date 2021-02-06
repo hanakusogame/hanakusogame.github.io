@@ -5,17 +5,23 @@
 }
 
 .full .nav{
-  padding: 8px 0px;
+  padding: 8px 0px 0px;
 }
 .full .nav .nav-link{
   text-decoration: none;
   color: white;
-  padding-left: 0px;
+  padding-left: 16px;
+}
+.full .nav .nav-link.active  {
+  background-color: #ECEEEF;
+  color: black;
 }
 .nav-link:hover{
-  color: darkgrey;
+  color: rgb(108, 191, 255);
   transition: .3s;
+  text-decoration: underline;
 }
+
 
 h3{
   padding-bottom: 8px;
@@ -76,6 +82,24 @@ td.scr{
   margin: 5%;
 }
 
+/* フッター */
+footer .container{
+  display: flex;
+  padding: 16px;
+}
+footer .container p  {
+  text-align: center;
+}
+footer li{
+  list-style: none;
+
+}
+.nav-link{
+  text-decoration: none;
+  padding-left: 0px;
+  color: white;
+}
+
 
 
 /* スマホサイズ */
@@ -83,8 +107,12 @@ td.scr{
   .full.sticky-top{
     display: none;
   }
+  
 
   /*　ハンバーガーボタン　*/
+  .globalMenuSp.active{
+    display: block;
+  }
 .hamburger {
   display : block;
   position: fixed;
