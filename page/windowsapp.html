@@ -60,6 +60,28 @@
     </nav>
   </div>
 
+  <!-- ハンバーガ―メニュー -->
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="globalMenuSp">
+    <ul>
+      <li>
+      <li><a href="../index2.html">トップページ</a>
+      </li>
+      <li><a href="windowsapp.html">Windowsゲーム</a>
+      </li>
+      <li><a href="Androidapp.html">Androidapp</a>
+      </li>
+      <li><a href="iOSapp.html">iOSapp</a>
+      </li>
+      <li><a href="../index2.html#environment">開発環境</a></li>
+    </ul>
+  </nav>
 
   <!-- メインコンテンツ -->
 
@@ -68,10 +90,7 @@
     <h2 class="m-b-1 border-bottom border-secondary">＜Windows ゲーム＞</h2>
 
     <!-- ゲーム一覧 -->
-    <div class="discription">
-    <h3>ゲームを始める前に</h3>
-    <p>ゲームをプレイする環境が整っているか<a href="../index2.html#environment">コチラ</a>からご確認ください。</p>
-    </div>
+   
 
     <table class="table table-bordered">
       <thead>
@@ -731,7 +750,19 @@
         ※ No.01～No.12までのゲームはWindows7ではゲームを終了できなくなる場合があるようです。</p>
     </div>
   </div>
-
+  <footer class="full m-b-0 bg-secondary">
+    <div class="container">
+    <p><a class="nav-link" href="../index2.html"><span>ゲームはシンプルに</span><br>
+      ー無駄を削ぎ落とした簡単ゲーム集ー</a></p>
+    <ul>
+      <li><a class="nav-link " href="../index2.html">トップページ</a></li>
+      <li><a class="nav-link" href="windowsapp.html">Windowsゲーム</a></li>
+      <li><a class="nav-link" href="Androidapp.html">Androidapp</a></li>
+      <li><a class="nav-link" href="iOSapp.html">iOSapp</a></li>
+      <li><a class="nav-link" href="../index2.html#environment">開発環境</a></li>
+    </ul>
+    </div>
+  </footer>
 
 
 
@@ -741,19 +772,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
     integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
     crossorigin="anonymous"></script>
-  <script type="tesx/js">
-  $(function() {
-  $('.hamburger').click(function() {
-  $(this).toggleClass('active');
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    $(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
 
-  if ($(this).hasClass('active')) {
-  $('.globalMenuSp').addClass('active');
-  } else {
-  $('.globalMenuSp').removeClass('active');
-  }
-  });
-  });
-</script>
+    </script>
 </body>
 
 </html>
