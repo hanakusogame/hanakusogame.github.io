@@ -12,6 +12,9 @@
   color: white;
   padding-left: 16px;
 }
+a.nav-link.p-r-1:hover {
+  background: rgb(153, 153, 153)
+}
 .full .nav .nav-link.active  {
   background-color: #ECEEEF;
   color: black;
