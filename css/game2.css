@@ -85,6 +85,9 @@ td.scr{
   width: 100%;
   height: auto;
 }
+.ios .scr img  {
+  width: 66%;
+}
 
 /* card */
 .card img{
