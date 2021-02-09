@@ -67,6 +67,14 @@ h2 span{
   text-decoration: line-through;
 }
 
+/* テーブル */
+.table  {
+  border: 3px solid #eee;
+}
+.table tbody tr:nth-child(even) {
+    background: #eee;
+
+}
 td img{
   vertical-align: middle;
 }
@@ -86,21 +94,63 @@ td.scr{
 }
 
 /* フッター */
+footer  {
+  background: rgb(155, 155, 155);
+  border-top: 1px solid #eee;
+}
 footer .container{
   display: flex;
   padding: 16px;
+  -webkit-flex-wrap: wrap;          /* Safari etc. */
+  -ms-flex-wrap    : wrap;          /* IE10        */
+  flex-wrap        : wrap;
+  justify-content: center;
 }
 footer .container p  {
+  text-align: left;
+  flex-basis: 50%;
+  color: black;
+
+}
+footer .container p a  {
   text-align: center;
+}
+footer .container ul  {
+  flex-basis: 50%;
 }
 footer li{
   list-style: none;
 
 }
-.nav-link{
+footer .nav-link{
   text-decoration: none;
   padding-left: 0px;
+  color: black;
+}
+footer .nav-link:hover  {
+  color: black;
+}
+.copyright  {
   color: white;
+}
+.copyright p  {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.copyright .nav-link  {
+  color: white;
+}
+.copyright .nav-link:hover  {
+  color: white;
+}
+
+.p-y-0  {
+  padding: 0px auto;
+}
+.p-x-0  {
+  padding: auto 0px;
 }
 
 
